@@ -3,7 +3,7 @@ const axios = require('axios');
 const getLugarLatLng = async(dir) => {
     const encodedURL = encodeURI(dir);
     const instancia = axios.create({
-        baseURL: `https://api.openweathermap.org/data/2.5/weather?q=${encodedURL}&APPID=b55a9c00eda8554586ee868d26e16402`,
+        baseURL: `https://api.openweathermap.org/data/2.5/weather?q=${encodedURL}&APPID=/API/`,
     });
 
     const respuesta = await instancia.get();
